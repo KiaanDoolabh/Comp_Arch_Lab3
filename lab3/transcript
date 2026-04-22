@@ -1,0 +1,7 @@
+# vsim -c -voptargs="+acc" work.testbench "+MEMFILE=../testing/xori.memfile" -do "onfinish stop; run 200 us; echo FINAL_MEMWRITE; examine /testbench/MemWrite; echo FINAL_DATAADR_DEC; examine -radix decimal /testbench/DataAdr; echo FINAL_WRITEDATA_DEC; examine -radix decimal /testbench/WriteData; quit -f" 
+# Start time: 14:38:23 on Apr 22,2026
+# ** Error (suppressible): (vsim-19) Failed to access library 'work' at "work".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 14:38:23 on Apr 22,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

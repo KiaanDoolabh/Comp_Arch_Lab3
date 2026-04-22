@@ -1,0 +1,1 @@
+This folder has two different sets of code, one is from my group, which had a nonworking version of the code, though it was very close to working well, and it is the file called lab2_ours.  I also had a friend in another group that had working code send me their code base, which is under the file lab2_working.
