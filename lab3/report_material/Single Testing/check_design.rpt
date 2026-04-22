@@ -1,0 +1,94 @@
+ 
+****************************************
+check_design summary:
+Version:     W-2024.09-SP5
+Date:        Wed Apr 22 17:12:11 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     73
+    Unconnected ports (LINT-28)                                    73
+
+Cells                                                               2
+    Nets connected to multiple pins on same cell (LINT-33)          2
+--------------------------------------------------------------------------------
+
+Warning: In design 'datapath', port 'Instr[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'datapath', port 'Instr[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'datapath', port 'Instr[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'datapath', port 'Instr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'datapath', port 'Instr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'datapath', port 'Instr[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'datapath', port 'Instr[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'maindec', port 'op[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'maindec', port 'op[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[27]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[26]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'adder', port 'b[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[27]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[26]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'mux3_WIDTH32_1', port 'd2[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'datapath', the same net is connected to more than one pin on submodule 'pcadd4'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'b[31]', 'b[30]'', 'b[29]', 'b[28]', 'b[27]', 'b[26]', 'b[25]', 'b[24]', 'b[23]', 'b[22]', 'b[21]', 'b[20]', 'b[19]', 'b[18]', 'b[17]', 'b[16]', 'b[15]', 'b[14]', 'b[13]', 'b[12]', 'b[11]', 'b[10]', 'b[9]', 'b[8]', 'b[7]', 'b[6]', 'b[5]', 'b[4]', 'b[3]', 'b[1]', 'b[0]'.
+Warning: In design 'datapath', the same net is connected to more than one pin on submodule 'srcamux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'd2[31]', 'd2[30]'', 'd2[29]', 'd2[28]', 'd2[27]', 'd2[26]', 'd2[25]', 'd2[24]', 'd2[23]', 'd2[22]', 'd2[21]', 'd2[20]', 'd2[19]', 'd2[18]', 'd2[17]', 'd2[16]', 'd2[15]', 'd2[14]', 'd2[13]', 'd2[12]', 'd2[11]', 'd2[10]', 'd2[9]', 'd2[8]', 'd2[7]', 'd2[6]', 'd2[5]', 'd2[4]', 'd2[3]', 'd2[2]', 'd2[1]', 'd2[0]'.
+1

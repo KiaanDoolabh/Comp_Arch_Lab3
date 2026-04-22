@@ -1,0 +1,82 @@
+ 
+****************************************
+Report : area
+Design : riscvsingle
+Version: W-2024.09-SP5
+Date   : Wed Apr 22 17:12:12 2026
+****************************************
+
+Library(s) Used:
+
+    scc9gena_tt_1.2v_25C (File: /opt/synopsys_media/tech_files/scc9gena_tt_1.2v_25C.db)
+
+Number of ports:                         1430
+Number of nets:                          6400
+Number of cells:                         5096
+Number of combinational cells:           4057
+Number of sequential cells:              1024
+Number of macros/black boxes:               0
+Number of buf/inv:                        260
+Number of references:                       3
+
+Combinational area:              20856.360377
+Buf/Inv area:                      515.480010
+Noncombinational area:           13108.479767
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 33964.840144
+Total area:                 undefined
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------
+riscvsingle                       33964.8401    100.0     45.0800      0.0000  0.0000  riscvsingle
+c                                   139.1600      0.4      5.8800      0.0000  0.0000  controller
+c/ad                                 64.6800      0.2     64.6800      0.0000  0.0000  aludec
+c/md                                 68.6000      0.2     68.6000      0.0000  0.0000  maindec
+dp                                33780.6001     99.5    685.0200      0.0000  0.0000  datapath
+dp/alu                             3790.6401     11.2   3790.6401      0.0000  0.0000  alu
+dp/bc                               697.7600      2.1    697.7600      0.0000  0.0000  branchcomp
+dp/ext                              205.8000      0.6    205.8000      0.0000  0.0000  extend
+dp/le                               320.4600      0.9    320.4600      0.0000  0.0000  loadext
+dp/pcadd4                           217.5600      0.6    217.5600      0.0000  0.0000  adder
+dp/pcmux                            219.5200      0.6    219.5200      0.0000  0.0000  mux2_WIDTH32_1
+dp/pcreg                            472.3600      1.4      1.9600    470.4000  0.0000  flopr_WIDTH32
+dp/resultmux                        351.8200      1.0    351.8200      0.0000  0.0000  mux3_WIDTH32_0
+dp/rf                             26402.1800     77.7  13764.1003  12638.0798  0.0000  regfile
+dp/srcamux                          195.0200      0.6    195.0200      0.0000  0.0000  mux3_WIDTH32_1
+dp/srcbmux                          222.4600      0.7    222.4600      0.0000  0.0000  mux2_WIDTH32_0
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------
+Total                                                  20856.3604  13108.4798  0.0000
+
+
+Area of detected synthetic parts
+--------------------------------
+  No DW parts to report!
+
+Estimated area of ungrouped synthetic parts
+-------------------------------------------
+                                      Estimated  Perc. of
+  Module              Implem.  Count       Area cell area
+  ------------------- -------  ----- ---------- ---------
+  DP_OP_22J2_122_5665     str      1   522.4292      1.5%
+  DW01_add            apparch      2   565.5579      1.7%
+  DW_cmp              apparch      8  1894.9222      5.6%
+  DW_leftsh              astr      1   774.2010      2.3%
+  DW_rightsh             astr      2  1564.0818      4.6%
+  ------------------- -------  ----- ---------- ---------
+  DP_OP Subtotal:                  1   522.4292      1.5%
+  Total:                          14  5321.1921     15.7%
+
+Subtotal of datapath(DP_OP) cell area:  522.4292  1.5%  (estimated)
+Total synthetic cell area:              5321.1921  15.7%  (estimated)
+
+1
