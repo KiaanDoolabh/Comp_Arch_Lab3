@@ -1,0 +1,22 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'riscv' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : riscv
+Version: W-2024.09-SP5
+Date   : Wed Apr 22 17:00:44 2026
+****************************************
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   riscv                    0.000000       19773.279297   -19773.279297
+                                                                    (VIOLATED)
+
+
+1

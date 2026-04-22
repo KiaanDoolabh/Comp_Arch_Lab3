@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nets
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : riscv
+Version: W-2024.09-SP5
+Date   : Wed Apr 22 17:00:45 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: PVT_1P2V_25C   Library: scc9gena_tt_1.2v_25C
+Wire Load Model Mode: top
+
+  Startpoint: c/controlregE/q_reg[10]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: c/controlregM/q_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                                   0.000000   0.000000
+  clock network delay (ideal)                                             0.000000   0.000000
+  c/controlregE/q_reg[10]/CLK (scc9gena_dfrtp_m)                0.000000  0.000000 # 0.000000 r
+  c/controlregE/q_reg[10]/Q (scc9gena_dfrtp_m)                  0.012581  0.088719   0.088719 f
+  c/controlregE/q[10] (net)                     1     0.000776            0.000000   0.088719 f
+  c/controlregE/q[10] (floprc_WIDTH14)                                    0.000000   0.088719 f
+  c/MemWriteE (net)                                   0.000776            0.000000   0.088719 f
+  c/controlregM/d[0] (flopr_WIDTH4)                                       0.000000   0.088719 f
+  c/controlregM/d[0] (net)                            0.000776            0.000000   0.088719 f
+  c/controlregM/q_reg[0]/D (scc9gena_dfrtp_m)                   0.012581  0.000000   0.088719 f
+  data arrival time                                                                  0.088719
+
+  clock clk (rise edge)                                                   0.000000   0.000000
+  clock network delay (ideal)                                             0.000000   0.000000
+  c/controlregM/q_reg[0]/CLK (scc9gena_dfrtp_m)                           0.000000   0.000000 r
+  library hold time                                                       -0.020462  -0.020462
+  data required time                                                                 -0.020462
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                 -0.020462
+  data arrival time                                                                  -0.088719
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                        0.109181
+
+
+1

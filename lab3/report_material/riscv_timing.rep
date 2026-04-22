@@ -1,0 +1,181 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : riscv
+Version: W-2024.09-SP5
+Date   : Wed Apr 22 17:00:45 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: PVT_1P2V_25C   Library: scc9gena_tt_1.2v_25C
+Wire Load Model Mode: top
+
+  Startpoint: dp/regE/q_reg[77]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dp/regE/q_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                                   0.000000   0.000000
+  clock network delay (ideal)                                             0.000000   0.000000
+  dp/regE/q_reg[77]/CLK (scc9gena_dfrtp_m)                      0.000000  0.000000 # 0.000000 r
+  dp/regE/q_reg[77]/Q (scc9gena_dfrtp_m)                        0.080181  0.134427   0.134427 r
+  dp/regE/q[77] (net)                           3     0.005050            0.000000   0.134427 r
+  dp/regE/q[77] (floprc_WIDTH178)                                         0.000000   0.134427 r
+  dp/Rs1E[0] (net)                                    0.005050            0.000000   0.134427 r
+  dp/Rs1E[0] (datapath)                                                   0.000000   0.134427 r
+  Rs1E[0] (net)                                       0.005050            0.000000   0.134427 r
+  hu/Rs1E[0] (hazard)                                                     0.000000   0.134427 r
+  hu/Rs1E[0] (net)                                    0.005050            0.000000   0.134427 r
+  hu/U36/Y (scc9gena_xnorlp2_m)                                 0.060629  0.066453   0.200880 r
+  hu/n23 (net)                                  1     0.001032            0.000000   0.200880 r
+  hu/U39/Y (scc9gena_nand4_m)                                   0.045941  0.043557   0.244437 f
+  hu/n24 (net)                                  1     0.001617            0.000000   0.244437 f
+  hu/U9/Y (scc9gena_nor3_0)                                     0.082299  0.071344   0.315781 r
+  hu/n33 (net)                                  2     0.002655            0.000000   0.315781 r
+  hu/U4/Y (scc9gena_nor2b_1)                                    0.281208  0.225955   0.541736 r
+  hu/ForwardAE[1] (net)                        34     0.035837            0.000000   0.541736 r
+  hu/ForwardAE[1] (hazard)                                                0.000000   0.541736 r
+  ForwardAE[1] (net)                                  0.035837            0.000000   0.541736 r
+  dp/ForwardAE[1] (datapath)                                              0.000000   0.541736 r
+  dp/ForwardAE[1] (net)                               0.035837            0.000000   0.541736 r
+  dp/faemux/s[1] (mux3_WIDTH32_3)                                         0.000000   0.541736 r
+  dp/faemux/s[1] (net)                                0.035837            0.000000   0.541736 r
+  dp/faemux/U48/Y (scc9gena_inv_m)                              0.044673  0.001523   0.543259 f
+  dp/faemux/n1 (net)                            1     0.001003            0.000000   0.543259 f
+  dp/faemux/U49/Y (scc9gena_nand2_m)                            0.479548  0.333604   0.876862 r
+  dp/faemux/n2 (net)                           32     0.032064            0.000000   0.876862 r
+  dp/faemux/U79/Y (scc9gena_o21ai_m)                            0.082174  0.012806   0.889668 f
+  dp/faemux/y[6] (net)                          1     0.001032            0.000000   0.889668 f
+  dp/faemux/y[6] (mux3_WIDTH32_3)                                         0.000000   0.889668 f
+  dp/SrcARegE[6] (net)                                0.001032            0.000000   0.889668 f
+  dp/srcamux/d0[6] (mux3_WIDTH32_1)                                       0.000000   0.889668 f
+  dp/srcamux/d0[6] (net)                              0.001032            0.000000   0.889668 f
+  dp/srcamux/U14/X (scc9gena_a22o_m)                            0.056887  0.119739   1.009407 f
+  dp/srcamux/y[6] (net)                         8     0.008053            0.000000   1.009407 f
+  dp/srcamux/y[6] (mux3_WIDTH32_1)                                        0.000000   1.009407 f
+  dp/SrcAE[6] (net)                                   0.008053            0.000000   1.009407 f
+  dp/alu/a[6] (alu)                                                       0.000000   1.009407 f
+  dp/alu/a[6] (net)                                   0.008053            0.000000   1.009407 f
+  dp/alu/U33/X (scc9gena_or2_m)                                 0.030178  0.075480   1.084887 f
+  dp/alu/n8 (net)                               3     0.003076            0.000000   1.084887 f
+  dp/alu/U148/Y (scc9gena_a21oi_m)                              0.082697  0.071023   1.155909 r
+  dp/alu/n119 (net)                             2     0.002054            0.000000   1.155909 r
+  dp/alu/U153/Y (scc9gena_o21ai_m)                              0.023256  0.023130   1.179039 f
+  dp/alu/n21 (net)                              1     0.001032            0.000000   1.179039 f
+  dp/alu/U154/Y (scc9gena_a21oi_m)                              0.074722  0.065474   1.244513 r
+  dp/alu/n23 (net)                              1     0.001770            0.000000   1.244513 r
+  dp/alu/U29/Y (scc9gena_o21ai_0)                               0.047311  0.047491   1.292003 f
+  dp/alu/n149 (net)                             2     0.003507            0.000000   1.292003 f
+  dp/alu/U28/Y (scc9gena_a21oi_0)                               0.070771  0.066155   1.358158 r
+  dp/alu/n138 (net)                             2     0.003568            0.000000   1.358158 r
+  dp/alu/U27/Y (scc9gena_o21ai_0)                               0.049914  0.050565   1.408723 f
+  dp/alu/n134 (net)                             2     0.005178            0.000000   1.408723 f
+  dp/alu/U160/Y (scc9gena_a21oi_1)                              0.044827  0.045286   1.454009 r
+  dp/alu/n129 (net)                             2     0.003568            0.000000   1.454009 r
+  dp/alu/U2/Y (scc9gena_o21ai_0)                                0.040006  0.037247   1.491256 f
+  dp/alu/n191 (net)                             2     0.003507            0.000000   1.491256 f
+  dp/alu/U100/Y (scc9gena_a21oi_0)                              0.070771  0.064691   1.555946 r
+  dp/alu/n114 (net)                             2     0.003568            0.000000   1.555946 r
+  dp/alu/U165/Y (scc9gena_o21ai_0)                              0.043717  0.041448   1.597395 f
+  dp/alu/n110 (net)                             2     0.003507            0.000000   1.597395 f
+  dp/alu/U168/Y (scc9gena_a21oi_0)                              0.070771  0.065434   1.662829 r
+  dp/alu/n197 (net)                             2     0.003568            0.000000   1.662829 r
+  dp/alu/U101/Y (scc9gena_o21ai_0)                              0.043717  0.041448   1.704277 f
+  dp/alu/n106 (net)                             2     0.003507            0.000000   1.704277 f
+  dp/alu/U23/Y (scc9gena_a21oi_0)                               0.070771  0.065434   1.769711 r
+  dp/alu/n101 (net)                             2     0.003568            0.000000   1.769711 r
+  dp/alu/U172/Y (scc9gena_o21ai_0)                              0.043717  0.041448   1.811160 f
+  dp/alu/n203 (net)                             2     0.003507            0.000000   1.811160 f
+  dp/alu/U175/Y (scc9gena_a21oi_0)                              0.095428  0.082559   1.893718 r
+  dp/alu/n96 (net)                              2     0.005264            0.000000   1.893718 r
+  dp/alu/U177/Y (scc9gena_o21ai_1)                              0.038012  0.033682   1.927400 f
+  dp/alu/n92 (net)                              2     0.005178            0.000000   1.927400 f
+  dp/alu/U180/Y (scc9gena_a21oi_1)                              0.044835  0.043292   1.970692 r
+  dp/alu/n208 (net)                             2     0.003568            0.000000   1.970692 r
+  dp/alu/U181/Y (scc9gena_o21ai_0)                              0.043717  0.037248   2.007941 f
+  dp/alu/n88 (net)                              2     0.003507            0.000000   2.007941 f
+  dp/alu/U184/Y (scc9gena_a21oi_0)                              0.095428  0.082559   2.090499 r
+  dp/alu/n83 (net)                              2     0.005264            0.000000   2.090499 r
+  dp/alu/U186/Y (scc9gena_o21ai_1)                              0.039063  0.027347   2.117846 f
+  dp/alu/n214 (net)                             2     0.003507            0.000000   2.117846 f
+  dp/alu/U51/Y (scc9gena_a21oi_0)                               0.070771  0.064502   2.182348 r
+  dp/alu/n78 (net)                              2     0.003568            0.000000   2.182348 r
+  dp/alu/U190/Y (scc9gena_o21ai_0)                              0.035757  0.036407   2.218755 f
+  dp/alu/n74 (net)                              2     0.002792            0.000000   2.218755 f
+  dp/alu/U193/Y (scc9gena_a21oi_m)                              0.126899  0.102021   2.320776 r
+  dp/alu/n219 (net)                             2     0.003568            0.000000   2.320776 r
+  dp/alu/U195/Y (scc9gena_o21ai_0)                              0.043717  0.046576   2.367352 f
+  dp/alu/n70 (net)                              2     0.003507            0.000000   2.367352 f
+  dp/alu/U198/Y (scc9gena_a21oi_0)                              0.070771  0.065434   2.432786 r
+  dp/alu/n65 (net)                              2     0.003568            0.000000   2.432786 r
+  dp/alu/U102/Y (scc9gena_o21ai_0)                              0.047083  0.045048   2.477834 f
+  dp/alu/n226 (net)                             2     0.004065            0.000000   2.477834 f
+  dp/alu/U201/Y (scc9gena_xnorlp2_0)                            0.059789  0.077868   2.555701 f
+  dp/alu/eq_x_7/A[31] (net)                     4     0.006702            0.000000   2.555701 f
+  dp/alu/U202/Y (scc9gena_xnorlp2_0)                            0.049467  0.048951   2.604652 f
+  dp/alu/n60 (net)                              1     0.001031            0.000000   2.604652 f
+  dp/alu/U203/Y (scc9gena_nor3_m)                               0.108583  0.092989   2.697641 r
+  dp/alu/overflow (net)                         1     0.001780            0.000000   2.697641 r
+  dp/alu/overflow (alu)                                                   0.000000   2.697641 r
+  dp/OverflowE (net)                                  0.001780            0.000000   2.697641 r
+  dp/OverflowE (datapath)                                                 0.000000   2.697641 r
+  OverflowE (net)                                     0.001780            0.000000   2.697641 r
+  c/OverflowE (controller)                                                0.000000   2.697641 r
+  c/OverflowE (net)                                   0.001780            0.000000   2.697641 r
+  c/U8/X (scc9gena_xorlp2_m)                                    0.059783  0.070673   2.768315 r
+  c/n3 (net)                                    1     0.000980            0.000000   2.768315 r
+  c/U9/Y (scc9gena_mux2i_m)                                     0.037627  0.032501   2.800815 f
+  c/n4 (net)                                    1     0.001768            0.000000   2.800815 f
+  c/U10/Y (scc9gena_mux2i_0)                                    0.054140  0.050053   2.850868 r
+  c/n5 (net)                                    1     0.001780            0.000000   2.850868 r
+  c/U11/X (scc9gena_xorlp2_m)                                   0.055046  0.061579   2.912448 r
+  c/n6 (net)                                    1     0.001022            0.000000   2.912448 r
+  c/U2/Y (scc9gena_nand2b_m)                                    0.023407  0.024421   2.936869 f
+  c/n9 (net)                                    1     0.001555            0.000000   2.936869 f
+  c/U4/Y (scc9gena_nand2_0)                                     0.046261  0.039317   2.976186 r
+  c/PCSrcE (net)                                3     0.003837            0.000000   2.976186 r
+  c/PCSrcE (controller)                                                   0.000000   2.976186 r
+  PCSrcE (net)                                        0.003837            0.000000   2.976186 r
+  hu/PCSrcE (hazard)                                                      0.000000   2.976186 r
+  hu/PCSrcE (net)                                     0.003837            0.000000   2.976186 r
+  hu/U14/Y (scc9gena_nand2b_1)                                  0.088073  0.089617   3.065803 r
+  hu/FlushE (net)                              14     0.016920            0.000000   3.065803 r
+  hu/FlushE (hazard)                                                      0.000000   3.065803 r
+  FlushE (net)                                        0.016920            0.000000   3.065803 r
+  dp/FlushE (datapath)                                                    0.000000   3.065803 r
+  dp/FlushE (net)                                     0.016920            0.000000   3.065803 r
+  dp/regE/clear (floprc_WIDTH178)                                         0.000000   3.065803 r
+  dp/regE/clear (net)                                 0.016920            0.000000   3.065803 r
+  dp/regE/U187/Y (scc9gena_inv_1)                               0.056622  0.060079   3.125881 f
+  dp/regE/n1 (net)                              4     0.024389            0.000000   3.125881 f
+  dp/regE/U183/Y (scc9gena_inv_2)                               0.145707  0.116537   3.242418 r
+  dp/regE/n4 (net)                             51     0.078416            0.000000   3.242418 r
+  dp/regE/U119/Y (scc9gena_nor2b_0)                             0.033933  0.024801   3.267219 f
+  dp/regE/N3 (net)                              1     0.000978            0.000000   3.267219 f
+  dp/regE/q_reg[0]/D (scc9gena_dfrtp_m)                         0.033933  0.000000   3.267219 f
+  data arrival time                                                                  3.267219
+
+  clock clk (rise edge)                                                   3.333333   3.333333
+  clock network delay (ideal)                                             0.000000   3.333333
+  dp/regE/q_reg[0]/CLK (scc9gena_dfrtp_m)                                 0.000000   3.333333 r
+  library setup time                                                      -0.060717  3.272616
+  data required time                                                                 3.272616
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                 3.272616
+  data arrival time                                                                  -3.267219
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                        0.005397
+
+
+1
