@@ -1,0 +1,94 @@
+ 
+****************************************
+Report : area
+Design : riscv
+Version: W-2024.09-SP5
+Date   : Wed Apr 22 17:00:45 2026
+****************************************
+
+Library(s) Used:
+
+    scc9gena_tt_1.2v_25C (File: /opt/synopsys_media/tech_files/scc9gena_tt_1.2v_25C.db)
+
+Number of ports:                         2965
+Number of nets:                          9278
+Number of cells:                         6491
+Number of combinational cells:           4938
+Number of sequential cells:              1527
+Number of macros/black boxes:               0
+Number of buf/inv:                        429
+Number of references:                       3
+
+Combinational area:              23577.820454
+Buf/Inv area:                      864.360017
+Noncombinational area:           33145.559444
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 56723.379898
+Total area:                 undefined
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------
+riscv                             56723.3799    100.0      0.0000      0.0000  0.0000  riscv
+c                                   537.0400      0.9     37.2400      0.0000  0.0000  controller
+c/ad                                 64.6800      0.1     64.6800      0.0000  0.0000  aludec
+c/controlregE                       258.7200      0.5     52.9200    205.8000  0.0000  floprc_WIDTH14
+c/controlregM                        60.7600      0.1      1.9600     58.8000  0.0000  flopr_WIDTH4
+c/controlregW                        46.0600      0.1      1.9600     44.1000  0.0000  flopr_WIDTH3
+c/md                                 69.5800      0.1     69.5800      0.0000  0.0000  maindec
+dp                                55946.2399     98.6    227.3600      0.0000  0.0000  datapath
+dp/alu                             4213.0201      7.4   4213.0201      0.0000  0.0000  alu
+dp/branchadd                        553.7000      1.0    553.7000      0.0000  0.0000  adder_0
+dp/ext                              205.8000      0.4    205.8000      0.0000  0.0000  extend
+dp/faemux                           352.8000      0.6    352.8000      0.0000  0.0000  mux3_WIDTH32_3
+dp/fbemux                           354.7600      0.6    354.7600      0.0000  0.0000  mux3_WIDTH32_2
+dp/le                               325.3600      0.6    325.3600      0.0000  0.0000  loadext
+dp/pcadd                            217.5600      0.4    217.5600      0.0000  0.0000  adder_1
+dp/pcmux                            223.4400      0.4    223.4400      0.0000  0.0000  mux2_WIDTH32_1
+dp/pcreg                            691.8800      1.2    221.4800    470.4000  0.0000  flopenr_WIDTH32
+dp/regD                            1986.4600      3.5    575.2600   1411.2000  0.0000  flopenrc_WIDTH96
+dp/regE                            3331.0200      5.9    714.4200   2616.6000  0.0000  floprc_WIDTH178
+dp/regM                            1532.7200      2.7      3.9200   1528.8000  0.0000  flopr_WIDTH104_1
+dp/regW                            1537.6200      2.7      3.9200   1533.7000  0.0000  flopr_WIDTH104_0
+dp/resultmux                        365.5400      0.6    365.5400      0.0000  0.0000  mux3_WIDTH32_0
+dp/rf                             39043.1998     68.8  13767.0403  25276.1595  0.0000  regfile
+dp/sm                               365.5400      0.6    365.5400      0.0000  0.0000  storemerge
+dp/srcamux                          195.0200      0.3    195.0200      0.0000  0.0000  mux3_WIDTH32_1
+dp/srcbmux                          223.4400      0.4    223.4400      0.0000  0.0000  mux2_WIDTH32_0
+hu                                  240.1000      0.4    240.1000      0.0000  0.0000  hazard
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------
+Total                                                  23577.8205  33145.5594  0.0000
+
+
+Area of detected synthetic parts
+--------------------------------
+  No DW parts to report!
+
+Estimated area of ungrouped synthetic parts
+-------------------------------------------
+                                      Estimated  Perc. of
+  Module              Implem.  Count       Area cell area
+  ------------------- -------  ----- ---------- ---------
+  DP_OP_23J2_122_9629     str      1   675.1274      1.2%
+  DW01_add            apparch      1   189.0374      0.3%
+  DW01_add             pparch      1   551.2243      1.0%
+  DW_cmp              apparch      9   728.3044      1.3%
+  DW_leftsh              astr      1   774.2010      1.4%
+  DW_rightsh             astr      2  1564.0818      2.8%
+  ------------------- -------  ----- ---------- ---------
+  DP_OP Subtotal:                  1   675.1274      1.2%
+  Total:                          15  4481.9764      7.9%
+
+Subtotal of datapath(DP_OP) cell area:  675.1274  1.2%  (estimated)
+Total synthetic cell area:              4481.9764  7.9%  (estimated)
+
+1

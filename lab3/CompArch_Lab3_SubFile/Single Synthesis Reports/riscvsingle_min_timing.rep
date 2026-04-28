@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : riscvsingle
+Version: W-2024.09-SP5
+Date   : Wed Apr 22 17:12:11 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: PVT_1P2V_25C   Library: scc9gena_tt_1.2v_25C
+Wire Load Model Mode: top
+
+  Startpoint: dp/rf/rf_reg[31][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dp/rf/rf_reg[31][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  dp/rf/rf_reg[31][0]/CLK (scc9gena_dfxtp_m)          0.000000 # 0.000000 r
+  dp/rf/rf_reg[31][0]/Q (scc9gena_dfxtp_m)            0.088416   0.088416 r
+  dp/rf/U1654/X (scc9gena_mux2_m)                     0.041506   0.129922 r
+  dp/rf/rf_reg[31][0]/D (scc9gena_dfxtp_m)            0.000000   0.129922 r
+  data arrival time                                              0.129922
+
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  dp/rf/rf_reg[31][0]/CLK (scc9gena_dfxtp_m)          0.000000   0.000000 r
+  library hold time                                   -0.012858  -0.012858
+  data required time                                             -0.012858
+  --------------------------------------------------------------------------
+  data required time                                             -0.012858
+  data arrival time                                              -0.129922
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.142780
+
+
+1

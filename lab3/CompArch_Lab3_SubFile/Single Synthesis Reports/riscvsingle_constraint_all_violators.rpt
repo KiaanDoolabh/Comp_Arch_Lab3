@@ -1,0 +1,22 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'riscvsingle' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : riscvsingle
+Version: W-2024.09-SP5
+Date   : Wed Apr 22 17:12:11 2026
+****************************************
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   riscvsingle              0.000000       9121.449219    -9121.449219
+                                                                    (VIOLATED)
+
+
+1

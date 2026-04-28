@@ -1,0 +1,37 @@
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : riscvsingle
+Version: W-2024.09-SP5
+Date   : Wed Apr 22 17:12:12 2026
+****************************************
+
+
+Library(s) Used:
+
+    scc9gena_tt_1.2v_25C (File: /opt/synopsys_media/tech_files/scc9gena_tt_1.2v_25C.db)
+
+
+Operating Conditions: PVT_1P2V_25C   Library: scc9gena_tt_1.2v_25C
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+riscvsingle                            8.60e-03    0.102 5.40e+03    0.116 100.0
+  dp (datapath)                        8.35e-03    0.101 5.38e+03    0.115  99.7
+  c (controller)                       1.81e-04 5.31e-05   15.816 2.50e-04   0.2
+1
